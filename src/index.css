@@ -5,9 +5,87 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: hsl(0, 0%, 10%);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.to-do-list{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+ margin-top: 100px;
+}
+h2{
+  font-size: 4rem;
+  color: white;
+}
+button{
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+.add-btn{
+  background-color: rgb(47, 166, 47);
+  margin-left: 10px;
+}
+.add-btn:hover{
+  background-color: rgb(16, 113, 54);
+}
+.delete-btn:hover{
+  background-color: rgb(234, 22, 22);
+}
+.up-btn:hover{
+  background-color: rgb(119, 165, 260);
+}
+.down-btn:hover{
+  background-color: rgba(43, 52, 222, 0.827);
+}
+input[type="text"]{
+  font-size: 1.6rem;
+  padding: 10px;
+  border: 2px solid hsl(0, 0%, 80%, 0.5);
+  border-radius: 5px;
+}
+ol{
+  padding: 0;
+}
+li{
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  background-color: #ffffff;
+  opacity: 0.6;
+  /* background-color: hsl(0, 0%, 97%); */
+  margin-bottom: 10px;
+  border: 2px solid hsl(0, 0%, 80%, 0.75);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.text{
+  flex: 1;
+}
+.delete-btn, .up-btn, .down-btn{
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #18181a;
+  color: #18181a;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 18px 18px 17px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 10px; 
 }
